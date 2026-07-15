@@ -1,8 +1,11 @@
 function App() {
   return (
-    <h1 class="text-3xl font-bold underline text-blue-600">
-      Tailwind is Working!
-    </h1>
+    <div className="min-h-screen overflow-x-hidden" >
+      <Navbar/>
+      <main>
+        
+      </main>
+    </div>
   );
 }
 
