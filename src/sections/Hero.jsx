@@ -1,4 +1,4 @@
-import { ArrowRight, Icon } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Button from "../components/Button";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -73,7 +73,9 @@ export default function Hero() {
             {/* Social Links */}
 
             <div className="flex items-center gap-4 animate-fade-in animation-delay-500">
-              <span className="text-sm text-muted-foreground">Follow me on:</span>
+              <span className="text-sm text-muted-foreground">
+                Follow me on:
+              </span>
               {[
                 { Icon: FaGithub, href: "https://github.com/taofeekjide" },
                 {
@@ -81,13 +83,34 @@ export default function Hero() {
                   href: "https://www.linkedin.com/in/taofeek-jide-idowu-0530692b4/",
                 },
               ].map((social, index) => (
-                <a key={index} href={social.href} className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300">
+                <a
+                  key={index}
+                  href={social.href}
+                  className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                >
                   <social.Icon size={20} />
                 </a>
               ))}
             </div>
           </div>
+
           {/* Right Column */}
+          <div className="relative animate-fade-in animation-delay-300">
+            {/* Profile Picture */}
+            <div className="relative w-80 h-80 mx-auto">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse" />
+
+              <div className="relative glass rounded-full p-2 glow-border w-full h-full">
+                <img
+                  src="/profile-pic.png"
+                  alt="Taofeek Jide-Idowu"
+                  className="w-full h-full object-cover rounded-full"
+                />
+
+                
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
