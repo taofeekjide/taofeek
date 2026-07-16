@@ -109,12 +109,18 @@ export default function Hero() {
 
                 {/* Floating badge */}
                 <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
-                  <div className = " flex items-center gap-3">
+                  <div className=" flex items-center gap-3">
                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
                     <span className="text-sm font-medium">Open To Work</span>
                   </div>
                 </div>
                 {/* Stats badge */}
+                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
+                  <div className="text-2xl font-bold text-primary">Solid</div>
+                  <div className="text-xs text-muted-foreground">
+                    Experience
+                  </div>
+                </div>
               </div>
             </div>
           </div>
