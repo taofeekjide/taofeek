@@ -19,7 +19,7 @@ export default function Navbar() {
           href="#"
           className="text-xl font-bold tracking-tight hover:text-primary"
         >
-          Taofeek
+          Taofeek Jide-Idowu
         </a>
 
         {/* Desktop navbar */}
