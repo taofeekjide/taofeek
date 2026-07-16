@@ -62,10 +62,13 @@ export default function Hero() {
             </div>
 
             {/* CTA */}
-            <div>
+            <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-400">
               <Button size='lg'>Contact Me <ArrowRight/> </Button>
               <AnimatedBorderButton/>
             </div>
+
+            {/* Social Links */}
+            <div></div>
           </div>
           {/* Right Column */}
         </div>

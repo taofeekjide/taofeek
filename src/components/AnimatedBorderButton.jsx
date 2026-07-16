@@ -10,7 +10,7 @@ export default function AnimatedBorderButton() {
         style={{ overflow: "visible" }}
       >
         <path
-          d="M 30, 1 A 29,29 0 0 0 1,30 L 1,30 A 29,29 0 0 0 30, 59 L"
+          d="M30 1 H170 A29 29 0 0 1 199 30 V30 A29 29 0 0 1 170 59 H30 A29 29 0 0 1 1 30 V30 A29 29 0 0 1 30 1 Z"
           fill="none"
           stroke="var(--color-primary)"
           strokeWidth="2"
@@ -18,10 +18,10 @@ export default function AnimatedBorderButton() {
           strokeDashoffset={"400"}
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="download-cv-path"
+          className="animated-border-path"
         />
       </svg>
-      <span>
+      <span className="relative z-10 flex items-center justify-center gap-2">
         My CV <DownloadCloud />
       </span>
     </button>
