@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, DownloadCloud } from "lucide-react";
 import Button from "../components/Button";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -80,7 +80,9 @@ export default function Hero() {
               <Button size="lg">
                 Contact Me <ArrowRight />{" "}
               </Button>
-              <AnimatedBorderButton />
+              <AnimatedBorderButton>
+                My CV <DownloadCloud />
+              </AnimatedBorderButton>
             </div>
 
             {/* Social Links */}
