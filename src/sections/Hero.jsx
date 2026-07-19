@@ -95,7 +95,7 @@ export default function Hero() {
                 class="btn primary"
               >
                 <AnimatedBorderButton>
-                  View CV < ArrowUpRight />
+                  View CV <ArrowUpRight />
                 </AnimatedBorderButton>
               </a>
             </div>
