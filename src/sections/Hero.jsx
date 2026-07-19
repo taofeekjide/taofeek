@@ -77,9 +77,11 @@ export default function Hero() {
 
             {/* CTA */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-400">
-              <Button size="lg">
-                Contact Me <ArrowRight />{" "}
-              </Button>
+              <a href="#contact">
+                <Button size="lg">
+                  Contact Me <ArrowRight />{" "}
+                </Button>
+              </a>
               <AnimatedBorderButton>
                 My CV <DownloadCloud />
               </AnimatedBorderButton>
@@ -133,10 +135,10 @@ export default function Hero() {
                 </div>
                 {/* Stats badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">Detail-Oriented</div>
-                  <div className="text-xs text-muted-foreground">
-                    Developer
+                  <div className="text-2xl font-bold text-primary">
+                    Detail-Oriented
                   </div>
+                  <div className="text-xs text-muted-foreground">Developer</div>
                 </div>
               </div>
             </div>

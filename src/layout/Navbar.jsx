@@ -50,11 +50,14 @@ export default function Navbar() {
         </div>
 
         {/* Contact button */}
+        <a href="#contact" >
         <div className="hidden md:block">
           <Button>Contact Me</Button>
         </div>
+        </a>
 
         {/* Mobile menu (small screen) */}
+        
         <button
           className="md:hidden px-2 text-foreground cursor-pointer"
           onClick={() => setIsMobileOpen((prev) => !prev)}
@@ -77,7 +80,9 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
+            <a href="#contact">
             <Button onClick={() => setIsMobileOpen(false)}>Contact Me</Button>
+            </a>
           </div>
         </div>
       )}
