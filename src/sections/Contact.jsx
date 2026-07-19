@@ -1,5 +1,5 @@
 import { Mail, Phone } from "lucide-react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import Button from "../components/Button";
@@ -26,26 +26,41 @@ const contactInfo = [
 ];
 
 export default function Contact() {
+  const [isSending, setIsSending] = useState(false);
+  const [status, setStatus] = useState({ type: null, message: "" });
+
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
-        publicKey: "YOUR_PUBLIC_KEY",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          alert("Message sent successfully!");
-          e.target.reset();
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-          alert("Failed to send message, please try again.");
-        },
-      );
+    setIsSending(true);
+    setStatus({ type: null, message: "" });
+
+    try {
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+      await emailjs.sendForm(serviceId, templateId, form.current, {
+        publicKey: publicKey,
+      });
+
+      setStatus({
+        type: "success",
+        message: "Message sent successfully! I will get back to you soon.",
+      });
+      e.target.reset();
+    } catch (error) {
+      console.error("Error sending email:", error);
+      setStatus({
+        type: "error",
+        message:
+          "Failed to send message. Please check your network and try again.",
+      });
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -147,8 +162,28 @@ export default function Contact() {
                   className="w-full px-4 p-3 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none transition-all"
                 />
               </div>
-              <Button type="submit" className={"w-full"} size="lg">
-                Send Message
+
+              {/* Inline Status Message Banner */}
+              {status.type && (
+                <div
+                  className={`p-4 rounded-lg text-sm border font-medium ${
+                    status.type === "success"
+                      ? "bg-green-500/10 text-green-500 border-green-500/20"
+                      : "bg-red-500/10 text-red-500 border-red-500/20"
+                  }`}
+                >
+                  {status.message}
+                </div>
+              )}
+
+              {/* Loading Disabled Button State */}
+              <Button
+                type="submit"
+                className="w-full"
+                size="lg"
+                disabled={isSending}
+              >
+                {isSending ? "Sending..." : "Send Message"}
               </Button>
             </form>
           </div>
