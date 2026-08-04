@@ -90,9 +90,9 @@ export default function Hero() {
                 </Button>
               </a>
               <a
-                href="/Jide-Idowu Taofeek2.pdf"
+                href="/Jide-Idowu Taofeek - CV.pdf"
                 target="_blank"
-                class="btn primary"
+                className="btn primary"
               >
                 <AnimatedBorderButton>
                   View CV <ArrowUpRight />
