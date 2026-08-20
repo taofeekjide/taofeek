@@ -39,7 +39,7 @@ const projects = [
       "MERN",
       "School Management",
     ],
-    link: "https://school-employee-management-system.onrender.com/",
+    link: "https://synergy-school-ems-1.onrender.com/",
     github: "https://github.com/taofeekjide/synergy-school-EMS",
   },
   {
