@@ -50,19 +50,22 @@ export default function Hero() {
 
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-200">
-                Full-stack Engineer. Creating fast,
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-200 text-primary">
+                I build high-performance
                 <br />
-                <span className="text-primary glow-text">beautiful and</span>
+                <span className="text-white">
+                  React and Full-Stack web applications
+                </span>
                 <br />
-                <span className="font-serif italic font-normal text-white">
-                  scalable web apps.
+                <span className="font-serif italic font-normal text-primary">
+                  that drive business growth.
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-300">
                 Hi, I am Taofeek Jide-Idowu, a Full-stack Engineer specializing
-                in the MERN stack. I build scalable, high-performance web
-                applications that solve complex real-world problems.
+                in the MERN stack. Whether you are looking to add an efficient
+                engineer to your tech team or need a scalable web application
+                built from scratch, I deliver clean, production-ready code.
               </p>
             </div>
 
@@ -70,7 +73,7 @@ export default function Hero() {
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-400">
               <a href="#contact">
                 <Button size="lg">
-                  Let's Talk <ArrowDown />{" "}
+                  Let's Work Together <ArrowDown />{" "}
                 </Button>
               </a>
               <a
