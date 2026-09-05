@@ -2,50 +2,33 @@ import AnimatedBorderButton from "../components/AnimatedBorderButton";
 
 const projects = [
   {
-    title: "E-commerce Website (In Progress)",
+    title: "A business landing page",
     description:
-      "A full-stack e-commerce website built with React, Express.js, Node.js, and MongoDB (MERN stack). It features user authentication, product listings, shopping cart functionality, and payment integration.",
+      "A landing page that gives a brief overview of a business, its services, and contact information. Built for retention and conversion",
     image: "/projects/project-1.png",
-    tags: [
-      "React",
-      "Node.js",
-      "MongoDB",
-      "Express",
-      "Paystack",
-      "MERN",
-      "Ecommerce",
-    ],
-    link: "https://arispace-store-and-logistics-1.onrender.com/",
-    github: "https://github.com/taofeekjide/Arispace-Store-and-Logistics",
+    tags: ["Business", "Landing page", "Conversion"],
+    link: "https://ghuffy-brands.netlify.app/",
   },
   {
     title: "Fashion E-commerce Website",
     description:
-      "An e-commerce website built with Wordpress. It also features user authentication, product listings, shopping cart functionality, and payment integration.",
+      "An e-commerce website built to make taking orders easy and automated 24/7.",
     image: "/projects/project-2.png",
-    tags: ["Wordpress", "Woocommerce", "Paystack", "Ecommerce", "Fashion"],
+    tags: ["Wordpress", "Business", "Paystack", "Ecommerce", "Fashion"],
     link: "https://rennyfashions.great-site.net/",
   },
   {
     title: "School Employee Management System",
     description:
-      "A web application for managing school employees, built with the MERN stack. It includes features for employee registration, leaves application, and department management.",
+      "A web application for managing school employees. It makes employee registration, leaves application, and department management easy and eliminate school paperwork.",
     image: "/projects/project-3.png",
-    tags: [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "MERN",
-      "School Management",
-    ],
+    tags: ["Schools", "Employees", "School Management"],
     link: "https://synergy-school-ems-1.onrender.com/",
-    github: "https://github.com/taofeekjide/synergy-school-EMS",
   },
   {
     title: "Medical Appointment Booking System",
     description:
-      "A full-stack web application for booking medical appointments, built with Wordpress. It features appointment scheduling, and doctor management.",
+      "A full-stack web application for booking medical appointments. It features appointment scheduling, and doctor management.",
     image: "/projects/project-4.png",
     tags: ["Wordpress", "Healthcare", "Booking System"],
     link: "https://azummedical.com/",

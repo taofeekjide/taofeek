@@ -28,22 +28,6 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background"></div>
       </div>
 
-      {/* Floating Green Dots */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(30)].map((_, i) => (
-          <div
-            className="absolute w-1.5 h-1.5 rounded-full opacity-60"
-            style={{
-              backgroundColor: "#20B2A6",
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animation: `slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
-              animationDelay: `${Math.random() * 5}s`,
-            }}
-          />
-        ))}
-      </div>
-
       {/* Content */}
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12">
@@ -60,14 +44,14 @@ export default function Hero() {
               </h1>
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Software Engineer * MERN stack
+                Full-stack Engineer * MERN stack | Wordpress
               </span>
             </div>
 
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-200">
-                Software Engineer. Creating fast,
+                Full-stack Engineer. Creating fast,
                 <br />
                 <span className="text-primary glow-text">beautiful and</span>
                 <br />
@@ -76,8 +60,8 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-300">
-                Hi, I am Taofeek Jide-Idowu, a Software Engineer specializing in
-                the MERN stack. I build scalable, high-performance web
+                Hi, I am Taofeek Jide-Idowu, a Full-stack Engineer specializing
+                in the MERN stack. I build scalable, high-performance web
                 applications that solve complex real-world problems.
               </p>
             </div>

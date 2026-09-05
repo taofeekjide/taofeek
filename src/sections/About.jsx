@@ -49,7 +49,7 @@ export default function About() {
             {/* About me content */}
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-300">
               <p>
-                I am a Software Engineer specializing in the MERN stack, with a
+                I am a Full-stack web developer specializing in the MERN stack and Wordpress, with a
                 passion for building scalable, high-performance web
                 applications. I have a strong foundation and a commitment to
                 continuous learning and improvement.
