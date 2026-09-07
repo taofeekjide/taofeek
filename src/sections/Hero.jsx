@@ -44,7 +44,7 @@ export default function Hero() {
               </h1>
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Full-stack Engineer * MERN stack | Wordpress
+                Full-stack Engineer * MERN stack
               </span>
             </div>
 
@@ -58,7 +58,7 @@ export default function Hero() {
                 </span>
                 <br />
                 <span className="font-serif italic font-normal text-primary">
-                  that drive business growth.
+                  that solve real world problems.
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-300">
@@ -128,9 +128,9 @@ export default function Hero() {
 
                 {/* Stats badge */}
                 <div className="glass rounded-xl px-5 py-4">
-                  <p className="text-primary text-lg font-bold">2+</p>
+                  <p className="text-primary text-lg font-bold"></p>
                   <p className="text-xs text-muted-foreground">
-                    Years Building Websites
+                    Building scalable web applications with React and the MERN stack.
                   </p>
                 </div>
 

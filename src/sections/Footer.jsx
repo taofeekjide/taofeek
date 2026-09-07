@@ -90,7 +90,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="mailto:idowutaofeek16@gmail.com"
+                href="mailto:taofeekjideidowu1@gmail.com"
                 className="glass p-3 rounded-xl hover:text-primary hover:scale-110 transition"
               >
                 <FaEnvelope size={20} />

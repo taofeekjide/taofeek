@@ -6,15 +6,16 @@ const projects = [
     description:
       "A landing page that gives a brief overview of a business, its services, and contact information. Built for retention and conversion",
     image: "/projects/project-1.png",
-    tags: ["Business", "Landing page", "Conversion"],
+    tags: ["Business", "Landing page", "Conversion", "React", "Tailwind CSS"],
     link: "https://ghuffy-brands.netlify.app/",
+    github: "https://github.com/taofeekjide/ghuffy",
   },
   {
     title: "Fashion E-commerce Website",
     description:
       "An e-commerce website built to make taking orders easy and automated 24/7.",
     image: "/projects/project-2.png",
-    tags: ["Wordpress", "Business", "Paystack", "Ecommerce", "Fashion"],
+    tags: ["Business", "Paystack", "Ecommerce", "Fashion"],
     link: "https://rennyfashions.great-site.net/",
   },
   {
@@ -22,8 +23,9 @@ const projects = [
     description:
       "A web application for managing school employees. It makes employee registration, leaves application, and department management easy and eliminate school paperwork.",
     image: "/projects/project-3.png",
-    tags: ["Schools", "Employees", "School Management"],
+    tags: ["Schools", "Employees", "School Management", "MERN Stack"],
     link: "https://synergy-school-ems-1.onrender.com/",
+    github: "https://github.com/taofeekjide/synergy-school-EMS",
   },
   {
     title: "Medical Appointment Booking System",
