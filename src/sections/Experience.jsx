@@ -1,6 +1,10 @@
 const experiences = [
   {
+<<<<<<< HEAD
     period: "2025 - Present",
+=======
+    period: "2024 - Present",
+>>>>>>> parent of ad1f244 (Littles)
     title: "Freelance Developer",
     company: "Self Employed",
     description:

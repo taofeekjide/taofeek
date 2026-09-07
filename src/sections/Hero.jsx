@@ -128,9 +128,9 @@ export default function Hero() {
 
                 {/* Stats badge */}
                 <div className="glass rounded-xl px-5 py-4">
-                  <p className="text-primary text-lg font-bold"></p>
+                  <p className="text-primary text-lg font-bold">2+</p>
                   <p className="text-xs text-muted-foreground">
-                    Focused on building scalable, user-centric web solutions
+                    Years Building Websites
                   </p>
                 </div>
 
