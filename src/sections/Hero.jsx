@@ -77,7 +77,7 @@ export default function Hero() {
                 </Button>
               </a>
               <a
-                href="/Jide-Idowu Taofeek - CV.pdf"
+                href="/Taofeek Jide-Idowu__CV.pdf"
                 target="_blank"
                 className="btn primary"
               >
