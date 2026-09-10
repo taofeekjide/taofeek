@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 const skills = [
   "React.js",
   "JavaScript",
+  "TypeScript",
   "Node.js",
   "Express.js",
   "MongoDB",
@@ -44,7 +45,7 @@ export default function Hero() {
               </h1>
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Full-stack Engineer * MERN stack
+                Full-stack Engineer 
               </span>
             </div>
 
@@ -54,7 +55,7 @@ export default function Hero() {
                 I build high-performance
                 <br />
                 <span className="text-white">
-                  React and Full-Stack web applications
+                  React and Full-Stack applications
                 </span>
                 <br />
                 <span className="font-serif italic font-normal text-primary">
@@ -62,8 +63,7 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-300">
-                Hi, I am Taofeek Jide-Idowu, a Full-stack Engineer specializing
-                in the MERN stack. Whether you are looking to add an efficient
+                Hi, I am Taofeek Jide-Idowu, a Full-stack Engineer. Whether you are looking to add an efficient
                 engineer to your tech team or need a scalable web application
                 built from scratch, I deliver clean, production-ready code.
               </p>
@@ -91,7 +91,7 @@ export default function Hero() {
 
             <div className="flex items-center gap-4 animate-fade-in animation-delay-500">
               <span className="text-sm text-muted-foreground">
-                Follow me on:
+                You can find me on:
               </span>
               {[
                 { Icon: FaGithub, href: "https://github.com/taofeekjide" },
@@ -130,7 +130,7 @@ export default function Hero() {
                 <div className="glass rounded-xl px-5 py-4">
                   <p className="text-primary text-lg font-bold"></p>
                   <p className="text-xs text-muted-foreground">
-                    Building scalable web applications with React and the MERN stack.
+                    Building scalable applications with React and the MERN stack.
                   </p>
                 </div>
 

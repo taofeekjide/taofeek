@@ -20,7 +20,7 @@ const contactInfo = [
   {
     icon: FaWhatsapp,
     label: "Whatsapp",
-    value: "+234 906 157 5432",
+    value: "Chat Taofeek on WhatsApp",
     href: "https://wa.me/+2349061575432",
   },
 ];

@@ -37,7 +37,7 @@ export default function Footer() {
             <h3 className="text-2xl font-bold mb-3">Taofeek Jide-Idowu</h3>
 
             <p className="text-muted-foreground">
-              Software Engineer specializing in scalable MERN applications.
+              Software Engineer.
             </p>
           </div>
 

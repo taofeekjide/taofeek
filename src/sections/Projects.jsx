@@ -2,23 +2,6 @@ import AnimatedBorderButton from "../components/AnimatedBorderButton";
 
 const projects = [
   {
-    title: "A business landing page",
-    description:
-      "A landing page that gives a brief overview of a business, its services, and contact information. Built for retention and conversion",
-    image: "/projects/project-1.png",
-    tags: ["Business", "Landing page", "Conversion", "React", "Tailwind CSS"],
-    link: "https://ghuffy-brands.netlify.app/",
-    github: "https://github.com/taofeekjide/ghuffy",
-  },
-  {
-    title: "Fashion E-commerce Website",
-    description:
-      "An e-commerce website built to make taking orders easy and automated 24/7.",
-    image: "/projects/project-2.png",
-    tags: ["Business", "Paystack", "Ecommerce", "Fashion"],
-    link: "https://rennyfashions.great-site.net/",
-  },
-  {
     title: "School Employee Management System",
     description:
       "A web application for managing school employees. It makes employee registration, leaves application, and department management easy and eliminate school paperwork.",
@@ -28,12 +11,22 @@ const projects = [
     github: "https://github.com/taofeekjide/synergy-school-EMS",
   },
   {
-    title: "Medical Appointment Booking System",
+    title: "Arispace Store and Logistics",
     description:
-      "A full-stack web application for booking medical appointments. It features appointment scheduling, and doctor management.",
-    image: "/projects/project-4.png",
-    tags: ["Wordpress", "Healthcare", "Booking System"],
-    link: "https://azummedical.com/",
+      "A web application for managing store inventory and logistics. It allows users to track products, manage orders, and streamline the supply chain process.",
+    image: "/projects/project-2.png",
+    tags: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+    link: "https://arispace-store-and-logistics-1.onrender.com/",
+    github: "",
+  },
+  {
+    title: "A business landing page",
+    description:
+      "A landing page that gives a brief overview of a business, its services, and contact information. Built for retention and conversion",
+    image: "/projects/project-1.png",
+    tags: ["React", "JavaScript", "Tailwind CSS"],
+    link: "https://ghuffy-brands.netlify.app/",
+    github: "https://github.com/taofeekjide/ghuffy",
   },
 ];
 

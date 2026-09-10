@@ -71,7 +71,7 @@ export default function About() {
             {/* Mission and vision statement */}
             <div className="glass rounded-2xl p-6 glow-border space-y-4 animate-fade-in animation-delay-400">
               <p className="text-lg text-muted-foreground italic">
-                My mission is to create innovative and impactful web solutions
+                My mission is to create innovative and impactful web and mobile solutions
                 that drive business value and enhance user experiences. I
                 believe in the power of technology to solve real-world problems
                 and make a positive difference in people's lives.

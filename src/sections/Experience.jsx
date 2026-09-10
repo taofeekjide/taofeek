@@ -1,27 +1,18 @@
 const experiences = [
   {
-    period: "2025 - Present",
-    title: "Freelance Developer",
-    company: "Self Employed",
-    description:
-      "Developing and maintaining web applications for various clients, ensuring responsive design and optimal performance.",
-    technologies: [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Tailwind CSS",
-      "Wordpress",
-    ],
-    current: true,
-  },
-  {
     period: "May 2025 - August 2025",
     title: "Intern Frontend Developer",
     company: "FlexiSaf Edusoft Limited",
     description:
       "Worked on the frontend development of web applications, implementing user interfaces and ensuring cross-browser compatibility.",
-    technologies: ["React", "JavaScript", "Tailwind CSS", "Git", "GitHub"],
+    technologies: [
+      "React",
+      "JavaScript",
+      "TypeScript",
+      "TailwindCSS",
+      "Git",
+      "GitHub",
+    ],
     current: false,
   },
 ];
