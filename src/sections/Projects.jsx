@@ -2,6 +2,21 @@ import AnimatedBorderButton from "../components/AnimatedBorderButton";
 
 const projects = [
   {
+    title: "Faith Roots (In Progress)",
+    description:
+      "FaithRoots is a web app that helps churches teach, assess, and track children's bible learning by age group.",
+    image: "/projects/project-4.png",
+    tags: [
+      "Church",
+      "Edtech",
+      "MERN",
+      "JavaScript",
+      "TypeScript",
+      "Full-Stack",
+    ],
+    link: "https://faith-roots-app.vercel.app/",
+  },
+  {
     title: "School Employee Management System",
     description:
       "A web application for managing school employees. It makes employee registration, leaves application, and department management easy and eliminate school paperwork.",
@@ -18,6 +33,14 @@ const projects = [
     tags: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
     link: "https://arispace-store-and-logistics-1.onrender.com/",
     github: "https://github.com/taofeekjide/Arispace-Store-and-Logistics",
+  },
+  {
+    title: "Her Path",
+    description: "",
+    image: "/projects/project-5.png",
+    tags: ["Guidance", "Women", "Fly"],
+    link: "https://herpathdevops.netlify.app",
+    github: "https://github.com/Bluneon27/HerPath",
   },
   {
     title: "A business landing page",
@@ -82,7 +105,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="text-primary hover:text-primary/80 font-medium"
                   >
-                    <AnimatedBorderButton>View Project</AnimatedBorderButton>
+                    <AnimatedBorderButton>Live</AnimatedBorderButton>
                   </a>
                   {project.github && (
                     <a
@@ -91,7 +114,7 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       className="text-primary hover:text-primary/80 font-medium"
                     >
-                      <AnimatedBorderButton>View Code</AnimatedBorderButton>
+                      <AnimatedBorderButton>GitHub</AnimatedBorderButton>
                     </a>
                   )}
                 </div>

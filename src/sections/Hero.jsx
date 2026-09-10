@@ -45,7 +45,7 @@ export default function Hero() {
               </h1>
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Full-stack Engineer 
+                Full-stack Engineer
               </span>
             </div>
 
@@ -63,9 +63,10 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-300">
-                Hi, I am Taofeek Jide-Idowu, a Full-stack Engineer. Whether you are looking to add an efficient
-                engineer to your tech team or need a scalable web application
-                built from scratch, I deliver clean, production-ready code.
+                Hi, I am Taofeek Jide-Idowu, a Full-stack Engineer. Whether you
+                are looking to add an efficient engineer to your tech team or
+                need a scalable web application built from scratch, I deliver
+                clean, production-ready code.
               </p>
             </div>
 
@@ -77,7 +78,7 @@ export default function Hero() {
                 </Button>
               </a>
               <a
-                href="/Taofeek Jide-Idowu__CV.pdf"
+                href="/Jide-Idowu Taofeek_CV.pdf"
                 target="_blank"
                 className="btn primary"
               >
@@ -130,7 +131,8 @@ export default function Hero() {
                 <div className="glass rounded-xl px-5 py-4">
                   <p className="text-primary text-lg font-bold"></p>
                   <p className="text-xs text-muted-foreground">
-                    Building scalable applications with React and the MERN stack.
+                    Building scalable applications with React and the MERN
+                    stack.
                   </p>
                 </div>
 
