@@ -1,4 +1,4 @@
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useRef, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
@@ -20,14 +20,26 @@ const contactInfo = [
   {
     icon: FaWhatsapp,
     label: "Whatsapp",
-    value: "Chat Taofeek on WhatsApp",
+    value: "Chat Me on WhatsApp",
     href: "https://wa.me/+2349061575432",
+  },
+  {
+    icon: MapPin,
+    label: "Location",
+    value: "Lagos, Nigeria",
+    href: "https://maps.google.com/?q=Lagos,+Nigeria",
   },
 ];
 
 export default function Contact() {
   const [isSending, setIsSending] = useState(false);
   const [status, setStatus] = useState({ type: null, message: "" });
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const form = useRef();
 
@@ -80,40 +92,9 @@ export default function Contact() {
           </p>
         </div>
 
-        {/* Contact Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          {contactInfo.map((info, index) => (
-            <div
-              key={index}
-              className="text-center p-6 rounded-xl border border-muted bg-card"
-            >
-              <a
-                href={info.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-secondary-foreground hover:text-primary transition-colors duration-300 inline-block"
-              >
-                <info.icon className="w-12 h-12 mx-auto mb-4" />
-              </a>
-              <h3 className="text-lg font-semibold text-secondary-foreground mb-2">
-                {info.label}
-              </h3>
-              <a
-                href={info.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300 break-all"
-              >
-                {info.value}
-              </a>
-            </div>
-          ))}
-        </div>
-
-        {/* Styled Contact Form */}
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          <div className="glass p-8 rounded-3xl border-primary/30 animate-fade-in animation-delay-300">
-            <form ref={form} onSubmit={sendEmail} className="space-y-6">
+          <div className="glass p-8 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300">
+            <form className="space-y-6" ref={form} onSubmit={sendEmail}>
               <div>
                 <label
                   htmlFor="name"
@@ -124,10 +105,17 @@ export default function Contact() {
                 <input
                   id="name"
                   type="text"
-                  name="user_name"
+                  name="name"
                   required
+                  value={formData.name}
+                  onChange={(e) =>
+                    setFormData({
+                      ...formData,
+                      name: e.target.value,
+                    })
+                  }
                   placeholder="Your name"
-                  className="w-full px-4 p-3 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all"
+                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                 />
               </div>
               <div>
@@ -140,10 +128,17 @@ export default function Contact() {
                 <input
                   id="email"
                   type="email"
-                  name="user_email"
+                  name="email"
                   required
-                  placeholder="example@email.com"
-                  className="w-full px-4 p-3 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all"
+                  value={formData.email}
+                  onChange={(e) =>
+                    setFormData({
+                      ...formData,
+                      email: e.target.value,
+                    })
+                  }
+                  placeholder="example@gmail.com"
+                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                 />
               </div>
               <div>
@@ -156,36 +151,68 @@ export default function Contact() {
                 <textarea
                   id="message"
                   name="message"
-                  required
-                  placeholder="Your message..."
                   rows="5"
-                  className="w-full px-4 p-3 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none transition-all"
-                />
+                  required
+                  value={formData.message}
+                  onChange={(e) =>
+                    setFormData({
+                      ...formData,
+                      message: e.target.value,
+                    })
+                  }
+                  placeholder="Your message..."
+                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none"
+                ></textarea>
+
+                {status.type && (
+                  <div
+                    className={`p-4 rounded-lg text-sm border font-medium ${
+                      status.type === "success"
+                        ? "bg-green-500/10 text-green-500 border-green-500/20"
+                        : "bg-red-500/10 text-red-500 border-red-500/20"
+                    }`}
+                  >
+                    {status.message}
+                  </div>
+                )}
               </div>
 
-              {/* Inline Status Message Banner */}
-              {status.type && (
-                <div
-                  className={`p-4 rounded-lg text-sm border font-medium ${
-                    status.type === "success"
-                      ? "bg-green-500/10 text-green-500 border-green-500/20"
-                      : "bg-red-500/10 text-red-500 border-red-500/20"
-                  }`}
-                >
-                  {status.message}
-                </div>
-              )}
-
-              {/* Loading Disabled Button State */}
               <Button
+                className={"w-full"}
                 type="submit"
-                className="w-full"
                 size="lg"
-                disabled={isSending}
+                onSubmit={sendEmail}
               >
-                {isSending ? "Sending..." : "Send Message"}
+                Send Message
+                <Send />
               </Button>
             </form>
+          </div>
+
+          {/* COntact Info */}
+          <div className="space-y-6 animate-fade-in animation-delay-400">
+            <div className="glass rounded-3xl p-8">
+              <h3 className="text-xl font-semibold mb-6">
+                Contact Information
+              </h3>
+              <div className="space-y-4">
+                {contactInfo.map((info, index) => (
+                  <a
+                    key={index}
+                    href={info.href}
+                    className="flex items-center gap-4 p-4 rounded-xl hover:bg-surface transition-colors"
+                  >
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                      <info.icon className="w-5 h-5 text-primary" />
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      {info.label}
+                    </div>
+                    <div className="font-medium">{info.value}</div>
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

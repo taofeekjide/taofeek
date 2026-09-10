@@ -17,7 +17,7 @@ const projects = [
     image: "/projects/project-2.png",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
     link: "https://arispace-store-and-logistics-1.onrender.com/",
-    github: "",
+    github: "https://github.com/taofeekjide/Arispace-Store-and-Logistics",
   },
   {
     title: "A business landing page",
